@@ -35,6 +35,7 @@ public class LetsReview {
         for(String s : stringList) {
             System.out.println(printEvenIndex(s) + " " + printOddIndex(s));
         }
+        sc.close();
     }
 
     /**

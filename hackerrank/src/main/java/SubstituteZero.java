@@ -32,6 +32,8 @@ public class SubstituteZero {
         System.out.println("Matrix after transformation");
         printMatrix(result);
 
+        scanner.close();
+
     }
 
     public static int[][] substitueZero(int[][] matrix) {
