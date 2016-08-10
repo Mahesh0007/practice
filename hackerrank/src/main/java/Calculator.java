@@ -3,7 +3,7 @@ import java.util.Scanner;
 /**
  * Created by vidya.priyadarshini on 23/07/16.
  */
-class Calculator {
+class Calculator implements AdvancedArithmetic {
 
      int power(int num, int exp) throws Exception {
 
@@ -32,5 +32,15 @@ class Calculator {
             }
         }
 
+    }
+
+    public int divisorSum(int n) {
+
+        if(n<1 || n >1000) System.exit(0);
+        int sum=0;
+        for(int i=1;i<=n;i++) {
+            if(n%i==0) sum = sum + i;
+        }
+        return sum;
     }
 }
